@@ -20,6 +20,10 @@
 		31A24B8F2185299300AD8196 /* ResponseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B8E2185299300AD8196 /* ResponseContainer.swift */; };
 		31A24B9121852AE300AD8196 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9021852AE300AD8196 /* Result.swift */; };
 		31A24B9321852B6A00AD8196 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9221852B6A00AD8196 /* APIError.swift */; };
+		31A24B9621852C9E00AD8196 /* GetPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9521852C9E00AD8196 /* GetPlace.swift */; };
+		31A24B9921852D0C00AD8196 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9821852D0C00AD8196 /* Place.swift */; };
+		31A24B9B21852D6400AD8196 /* GetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9A21852D6400AD8196 /* GetList.swift */; };
+		31A24B9D21852DB200AD8196 /* TasksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9C21852DB200AD8196 /* TasksList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		31A24B8E2185299300AD8196 /* ResponseContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseContainer.swift; sourceTree = "<group>"; };
 		31A24B9021852AE300AD8196 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		31A24B9221852B6A00AD8196 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		31A24B9521852C9E00AD8196 /* GetPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlace.swift; sourceTree = "<group>"; };
+		31A24B9821852D0C00AD8196 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		31A24B9A21852D6400AD8196 /* GetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetList.swift; sourceTree = "<group>"; };
+		31A24B9C21852DB200AD8196 /* TasksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +162,8 @@
 				31A24B8B2185293300AD8196 /* APIResponse.swift */,
 				31A24B9021852AE300AD8196 /* Result.swift */,
 				31A24B9221852B6A00AD8196 /* APIError.swift */,
+				31A24B9521852C9E00AD8196 /* GetPlace.swift */,
+				31A24B9A21852D6400AD8196 /* GetList.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -161,6 +171,8 @@
 		31A24B812185058400AD8196 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				31A24B9721852D0400AD8196 /* Entity */,
+				31A24B9421852C4200AD8196 /* Source */,
 				31A24B802185057F00AD8196 /* Services */,
 			);
 			name = Model;
@@ -202,6 +214,22 @@
 				31A24B8E2185299300AD8196 /* ResponseContainer.swift */,
 			);
 			path = Auxiliar;
+			sourceTree = "<group>";
+		};
+		31A24B9421852C4200AD8196 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		31A24B9721852D0400AD8196 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				31A24B9821852D0C00AD8196 /* Place.swift */,
+				31A24B9C21852DB200AD8196 /* TasksList.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,7 +363,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31A24B9D21852DB200AD8196 /* TasksList.swift in Sources */,
+				31A24B9621852C9E00AD8196 /* GetPlace.swift in Sources */,
 				31A24B86218507A000AD8196 /* MainMenuViewController.swift in Sources */,
+				31A24B9B21852D6400AD8196 /* GetList.swift in Sources */,
 				31A24B8821851A5D00AD8196 /* ClientAPI.swift in Sources */,
 				31A24B8A2185291500AD8196 /* APIRequest.swift in Sources */,
 				31A24B8C2185293300AD8196 /* APIResponse.swift in Sources */,
@@ -343,6 +374,7 @@
 				31A24B9321852B6A00AD8196 /* APIError.swift in Sources */,
 				31A24B8F2185299300AD8196 /* ResponseContainer.swift in Sources */,
 				315774AF2184FADC000A4792 /* AppDelegate.swift in Sources */,
+				31A24B9921852D0C00AD8196 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
