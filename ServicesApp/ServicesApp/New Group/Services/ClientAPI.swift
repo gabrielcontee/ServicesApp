@@ -10,13 +10,13 @@ import Foundation
 
 class ClientAPI {
     
-    private let baseEndpointUrl = URL(string: "http://dev.4all.com:3003")!
+    private let baseEndpointUrl = "http://dev.4all.com:3003"
     private let session = URLSession(configuration: .default)
     
     /// Sends a request to Marvel servers, calling the completion method when finished
     func send<T: APIRequest>(_ request: T, completion: @escaping ResultCallback<ResponseContainer<T.Response>>) {
         
-        let endpoint = self.endpoint(for: request)
+        let endpoint = URL(string: baseEndpointUrl + request.resourceName)!
         
         let task = session.dataTask(with: URLRequest(url: endpoint)) { data, response, error in
             if let data = data {
