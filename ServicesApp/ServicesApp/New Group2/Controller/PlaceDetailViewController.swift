@@ -10,6 +10,13 @@ import UIKit
 
 class PlaceDetailViewController: UIViewController {
     
+    @IBOutlet weak var descriptionTextView: UITextView!{
+        didSet{
+            adjustUITextViewHeight(arg : descriptionTextView)
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,6 +71,14 @@ class PlaceDetailViewController: UIViewController {
     }
     
     @objc func searchPressed(){
+        
+    }
+    
+    func adjustUITextViewHeight(arg : UITextView){
+        arg.translatesAutoresizingMaskIntoConstraints = true
+        arg.sizeToFit()
+        arg.textContainerInset.right = 16.0
+        arg.isScrollEnabled = false
         
     }
     
