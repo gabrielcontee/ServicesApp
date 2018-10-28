@@ -35,6 +35,9 @@ class PlaceDetailViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var mapView: MapView!
+    
+    
     private lazy var viewModel = PlaceDetailsViewModel()
     private lazy var appDelegate = UIApplication.shared.delegate as? AppDelegate
     
@@ -93,6 +96,8 @@ class PlaceDetailViewController: UIViewController {
             self.streetNameLabel.text = self.viewModel.neighborhoodName
             self.descriptionTextView.text = self.viewModel.placeDescription
             self.addNavigationBarTitleLabel(self.viewModel.neighborhoodName)
+            self.mapView.centerOnLocation(lat: self.viewModel.placeLatitude, long: self.viewModel.placeLongitude)
+            self.view.layoutIfNeeded()
             
             if let url = self.viewModel.placePhotoURL{
                 let activityIndicator = UIViewController.displaySpinner(onView: self.placeImageView)

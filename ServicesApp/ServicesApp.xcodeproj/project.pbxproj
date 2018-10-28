@@ -42,6 +42,8 @@
 		31A24BCD2185F94E00AD8196 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BCB2185F94E00AD8196 /* UIView.swift */; };
 		31A24BD12186162C00AD8196 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BD02186162C00AD8196 /* UIImageView.swift */; };
 		31A24BD32186271400AD8196 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BD22186271400AD8196 /* String.swift */; };
+		31A24BD521862A3600AD8196 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31A24BD421862A3600AD8196 /* MapView.xib */; };
+		31A24BD921862A8500AD8196 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BD821862A8500AD8196 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		31A24BCB2185F94E00AD8196 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		31A24BD02186162C00AD8196 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		31A24BD22186271400AD8196 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		31A24BD421862A3600AD8196 /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		31A24BD821862A8500AD8196 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +309,8 @@
 				31A24BAA21854C0300AD8196 /* TaskCell.swift */,
 				31A24BCA2185F94E00AD8196 /* TextView.swift */,
 				31A24BCB2185F94E00AD8196 /* UIView.swift */,
+				31A24BD421862A3600AD8196 /* MapView.xib */,
+				31A24BD821862A8500AD8196 /* MapView.swift */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -425,6 +431,7 @@
 				31A24BAD21854C0300AD8196 /* TaskCell.xib in Resources */,
 				315774B92184FADE000A4792 /* LaunchScreen.storyboard in Resources */,
 				31A24BBD2185774500AD8196 /* PersonCommentView.xib in Resources */,
+				31A24BD521862A3600AD8196 /* MapView.xib in Resources */,
 				315774B62184FADE000A4792 /* Assets.xcassets in Resources */,
 				315774B42184FADC000A4792 /* Main.storyboard in Resources */,
 			);
@@ -465,6 +472,7 @@
 				31A24B9B21852D6400AD8196 /* GetList.swift in Sources */,
 				31A24BD12186162C00AD8196 /* UIImageView.swift in Sources */,
 				31A24B9F2185336E00AD8196 /* TaskListDataSource.swift in Sources */,
+				31A24BD921862A8500AD8196 /* MapView.swift in Sources */,
 				31A24B8821851A5D00AD8196 /* ClientAPI.swift in Sources */,
 				31A24BB321855C6900AD8196 /* PlaceDetailViewController.swift in Sources */,
 				31A24BCC2185F94E00AD8196 /* TextView.swift in Sources */,

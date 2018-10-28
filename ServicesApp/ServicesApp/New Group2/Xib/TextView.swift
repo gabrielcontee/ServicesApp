@@ -14,7 +14,6 @@ extension UITextView{
     func adjustUITextViewHeight(arg : UITextView){
         arg.translatesAutoresizingMaskIntoConstraints = true
         arg.sizeToFit()
-        arg.textContainerInset.right = 15.0
         arg.isScrollEnabled = false
         
     }
