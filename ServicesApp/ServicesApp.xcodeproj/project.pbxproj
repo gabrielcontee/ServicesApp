@@ -27,6 +27,7 @@
 		31A24B9F2185336E00AD8196 /* TaskListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9E2185336E00AD8196 /* TaskListDataSource.swift */; };
 		31A24BA1218544A100AD8196 /* PlacesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BA0218544A100AD8196 /* PlacesDataSource.swift */; };
 		31A24BA32185479600AD8196 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BA22185479600AD8196 /* TaskListViewModel.swift */; };
+		31A24BA6218549B000AD8196 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BA5218549B000AD8196 /* UIAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		31A24B9E2185336E00AD8196 /* TaskListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDataSource.swift; sourceTree = "<group>"; };
 		31A24BA0218544A100AD8196 /* PlacesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDataSource.swift; sourceTree = "<group>"; };
 		31A24BA22185479600AD8196 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		31A24BA5218549B000AD8196 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		31A24B832185059000AD8196 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				31A24BA4218549A200AD8196 /* Extensions */,
 				315774B22184FADC000A4792 /* Main.storyboard */,
 				31A24B85218507A000AD8196 /* MainMenuViewController.swift */,
 			);
@@ -239,6 +242,14 @@
 				31A24B9C21852DB200AD8196 /* Task.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		31A24BA4218549A200AD8196 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31A24BA5218549B000AD8196 /* UIAlertController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +395,7 @@
 				31A24B8C2185293300AD8196 /* APIResponse.swift in Sources */,
 				31A24B9121852AE300AD8196 /* Result.swift in Sources */,
 				31A24B9321852B6A00AD8196 /* APIError.swift in Sources */,
+				31A24BA6218549B000AD8196 /* UIAlertController.swift in Sources */,
 				31A24B8F2185299300AD8196 /* ResponseContainer.swift in Sources */,
 				315774AF2184FADC000A4792 /* AppDelegate.swift in Sources */,
 				31A24B9921852D0C00AD8196 /* Place.swift in Sources */,
