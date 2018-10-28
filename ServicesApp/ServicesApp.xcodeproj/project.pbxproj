@@ -32,6 +32,10 @@
 		31A24BB02185598800AD8196 /* TasksPopulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BAF2185598800AD8196 /* TasksPopulationTests.swift */; };
 		31A24BB321855C6900AD8196 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BB221855C6900AD8196 /* PlaceDetailViewController.swift */; };
 		31A24BB5218565CB00AD8196 /* ImageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BB4218565CB00AD8196 /* ImageColor.swift */; };
+		31A24BBB2185773900AD8196 /* PersonCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BBA2185773900AD8196 /* PersonCommentView.swift */; };
+		31A24BBD2185774500AD8196 /* PersonCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31A24BBC2185774500AD8196 /* PersonCommentView.xib */; };
+		31A24BBF218578C000AD8196 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BBE218578C000AD8196 /* TextView.swift */; };
+		31A24BC121857A2900AD8196 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BC021857A2900AD8196 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		31A24BAF2185598800AD8196 /* TasksPopulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksPopulationTests.swift; sourceTree = "<group>"; };
 		31A24BB221855C6900AD8196 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
 		31A24BB4218565CB00AD8196 /* ImageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageColor.swift; path = "ServicesApp/New Group2/Controller/ImageColor.swift"; sourceTree = SOURCE_ROOT; };
+		31A24BBA2185773900AD8196 /* PersonCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCommentView.swift; sourceTree = "<group>"; };
+		31A24BBC2185774500AD8196 /* PersonCommentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCommentView.xib; sourceTree = "<group>"; };
+		31A24BBE218578C000AD8196 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextView.swift; path = "ServicesApp/New Group2/Xib/TextView.swift"; sourceTree = SOURCE_ROOT; };
+		31A24BC021857A2900AD8196 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = "ServicesApp/New Group2/Xib/UIView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				31A24BB4218565CB00AD8196 /* ImageColor.swift */,
+				31A24BBE218578C000AD8196 /* TextView.swift */,
+				31A24BC021857A2900AD8196 /* UIView.swift */,
 			);
 			name = Util;
 			path = U;
@@ -275,6 +285,8 @@
 			isa = PBXGroup;
 			children = (
 				31A24BAB21854C0300AD8196 /* TaskCell.xib */,
+				31A24BBC2185774500AD8196 /* PersonCommentView.xib */,
+				31A24BBA2185773900AD8196 /* PersonCommentView.swift */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -394,6 +406,7 @@
 			files = (
 				31A24BAD21854C0300AD8196 /* TaskCell.xib in Resources */,
 				315774B92184FADE000A4792 /* LaunchScreen.storyboard in Resources */,
+				31A24BBD2185774500AD8196 /* PersonCommentView.xib in Resources */,
 				315774B62184FADE000A4792 /* Assets.xcassets in Resources */,
 				315774B42184FADC000A4792 /* Main.storyboard in Resources */,
 			);
@@ -422,7 +435,9 @@
 			files = (
 				31A24B9D21852DB200AD8196 /* Task.swift in Sources */,
 				31A24BAC21854C0300AD8196 /* TaskCell.swift in Sources */,
+				31A24BC121857A2900AD8196 /* UIView.swift in Sources */,
 				31A24B9621852C9E00AD8196 /* GetPlace.swift in Sources */,
+				31A24BBF218578C000AD8196 /* TextView.swift in Sources */,
 				31A24BB5218565CB00AD8196 /* ImageColor.swift in Sources */,
 				31A24BA32185479600AD8196 /* TaskListViewModel.swift in Sources */,
 				31A24BA1218544A100AD8196 /* PlacesDataSource.swift in Sources */,
@@ -431,6 +446,7 @@
 				31A24B9F2185336E00AD8196 /* TaskListDataSource.swift in Sources */,
 				31A24B8821851A5D00AD8196 /* ClientAPI.swift in Sources */,
 				31A24BB321855C6900AD8196 /* PlaceDetailViewController.swift in Sources */,
+				31A24BBB2185773900AD8196 /* PersonCommentView.swift in Sources */,
 				31A24B8A2185291500AD8196 /* APIRequest.swift in Sources */,
 				31A24B8C2185293300AD8196 /* APIResponse.swift in Sources */,
 				31A24B9121852AE300AD8196 /* Result.swift in Sources */,
