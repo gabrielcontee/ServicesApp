@@ -33,9 +33,9 @@ class TasksPopulationTest: XCTestCase {
         })
         
         waitForExpectations(timeout: 15, handler: nil)
-        XCTAssertNotEqual(viewModel.task(for: 0)?.name, "")
+        XCTAssertNotEqual(viewModel.task(for: 0), "")
         XCTAssertNotNil(viewModel.task(for: 0))
-        XCTAssertNotEqual(viewModel.task(for: 0)?.name, viewModel.task(for: 1)?.name)
+        XCTAssertNotEqual(viewModel.task(for: 0), viewModel.task(for: 1))
     }
     
     func testPerformanceExample() {

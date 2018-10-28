@@ -148,7 +148,8 @@ class PlaceDetailViewController: UIViewController {
     
     func addSearchNavigationItem(){
         let searchImage = UIImage(named: "ICONE PESQUISA")
-        let rightBarButtonItem = UIBarButtonItem(image: searchImage, style: .plain, target: self, action: #selector(PlaceDetailViewController.searchPressed))
+        let scaledIcon = UIImage(cgImage: (searchImage?.cgImage)!, scale: 1.75, orientation: (searchImage?.imageOrientation)!)
+        let rightBarButtonItem = UIBarButtonItem(image: scaledIcon, style: .plain, target: self, action: #selector(PlaceDetailViewController.searchPressed))
         rightBarButtonItem.tintColor = .white
         self.navigationItem.setRightBarButton(rightBarButtonItem, animated: false)
         
