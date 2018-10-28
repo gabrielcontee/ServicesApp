@@ -13,11 +13,7 @@ class PersonCommentView: UIView {
     @IBOutlet weak var personImageView: UIImageView!
     @IBOutlet weak var personNameLabel: UILabel!
     @IBOutlet weak var personCommentTitleLabel: UILabel!
-    @IBOutlet weak var personCommentDescripTextView: UITextView!{
-        didSet{
-            personCommentDescripTextView.adjustUITextViewHeight(arg: personCommentDescripTextView)
-        }
-    }
+    @IBOutlet weak var personCommentDescripTextView: UITextView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
