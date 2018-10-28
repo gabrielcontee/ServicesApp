@@ -14,7 +14,7 @@ protocol DataRefresh{
 
 class CommentariesViewModel: NSObject {
     
-    private lazy var detailsDataSource = PlacesDataSource()
+//    private lazy var detailsDataSource = PlacesDataSource()
     
     private lazy var commentaries: [Commentary] = []
     
@@ -23,7 +23,7 @@ class CommentariesViewModel: NSObject {
     override init() {
         super.init()
         
-        detailsDataSource.delegate = self
+        PlacesDataSource.delegate = self
     }
     
     func comment(for index: Int) -> Commentary?{

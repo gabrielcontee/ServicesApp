@@ -18,7 +18,7 @@ class PlacesDataSource: NSObject{
     
     private lazy var apiClient = ClientAPI()
     
-    var delegate: CommentDataDelegate?
+    static var delegate: CommentDataDelegate?
     
     var placeData: Place?
     
@@ -29,7 +29,7 @@ class PlacesDataSource: NSObject{
             case .success(let place):
                 self.placeData = place
                 
-                self.delegate?.commentariesReceived(commentaries: place.comentarios ?? [])
+                PlacesDataSource.delegate?.commentariesReceived(commentaries: place.comentarios ?? [])
                 
                 completion(nil)
             case .failure(let error):

@@ -99,8 +99,6 @@ class PlaceDetailViewController: UIViewController {
             self.descriptionTextView.text = self.viewModel.placeDescription
             self.addNavigationBarTitleLabel(self.viewModel.neighborhoodName)
             self.mapView.centerOnLocation(lat: self.viewModel.placeLatitude, long: self.viewModel.placeLongitude)
-//            self.commentaryView.setCommentaryElements(imageUrl: self.viewModel.placeLatitude, personName: self.viewModel.placeLatitude, commentTitle: self.viewModel.placeLatitude, commentDescription: self.viewModel.placeLatitude)
-            self.view.layoutIfNeeded()
             
             if let url = self.viewModel.placePhotoURL{
                 let activityIndicator = UIViewController.displaySpinner(onView: self.placeImageView)

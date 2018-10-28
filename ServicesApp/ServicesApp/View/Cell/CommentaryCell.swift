@@ -21,6 +21,7 @@ class CommentaryCell: UICollectionViewCell {
         personCommentDescripTextView.isScrollEnabled = false
     }
     
+    
     func setCommentaryElements(imageUrlString: String, personName: String, commentTitle: String, commentDescription: String){
         if let url = URL(string: imageUrlString){
             personImageView.downloaded(url: url) {}

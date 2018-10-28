@@ -18,7 +18,7 @@ class CommentariesCollectionXIB: UICollectionViewController {
         super.viewDidLoad()
         
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView!.register(CommentaryCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         viewModel.refreshDelegate = self
     }
@@ -47,7 +47,9 @@ class CommentariesCollectionXIB: UICollectionViewController {
 extension CommentariesCollectionXIB: DataRefresh{
     
     func loadData() {
-        self.collectionView.reloadData()
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
     }
 }
 
