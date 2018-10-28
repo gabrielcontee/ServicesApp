@@ -51,6 +51,7 @@ class PlaceDetailsViewModel: NSObject {
                     self.placeLatitude = latitude
                     self.placeLongitude = longitude
                 }
+                
                 completion()
             }else{
                 print("Could not load place details")

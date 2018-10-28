@@ -21,7 +21,7 @@ class PlaceDetailViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var personCommentView: PersonCommentView!
+    
     
     @IBOutlet weak var addressPointView: UIView!{
         didSet{
@@ -36,7 +36,9 @@ class PlaceDetailViewController: UIViewController {
     }
     
     @IBOutlet weak var mapView: MapView!
-    @IBOutlet weak var commentaryView: PersonCommentView!
+    
+    @IBOutlet weak var commentariesContainerView: UIView!
+    
     
     private lazy var viewModel = PlaceDetailsViewModel()
     private lazy var appDelegate = UIApplication.shared.delegate as? AppDelegate
@@ -86,7 +88,7 @@ class PlaceDetailViewController: UIViewController {
     }
     
     @IBAction func commentariesButtonPressed(_ sender: UIButton) {
-        let yOffSet = CGPoint(x: self.view.frame.minX, y: personCommentView.frame.minY)
+        let yOffSet = CGPoint(x: self.view.frame.minX, y: commentariesContainerView.frame.midY)
         self.scrollView.setContentOffset(yOffSet, animated: true)
     }
     

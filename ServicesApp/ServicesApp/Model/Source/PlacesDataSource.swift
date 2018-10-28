@@ -8,11 +8,17 @@
 
 import Foundation
 
+protocol CommentDataDelegate{
+    func commentariesReceived(commentaries: [Commentary])
+}
+
 class PlacesDataSource: NSObject{
     
     typealias Id = Int
     
     private lazy var apiClient = ClientAPI()
+    
+    var delegate: CommentDataDelegate?
     
     var placeData: Place?
     
@@ -22,6 +28,9 @@ class PlacesDataSource: NSObject{
             switch result{
             case .success(let place):
                 self.placeData = place
+                
+                self.delegate?.commentariesReceived(commentaries: place.comentarios ?? [])
+                
                 completion(nil)
             case .failure(let error):
                 print(error)

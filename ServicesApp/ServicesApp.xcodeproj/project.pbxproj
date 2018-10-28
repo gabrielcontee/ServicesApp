@@ -11,9 +11,7 @@
 		3191518B21863FE000A5D4F1 /* PlaceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191515F21863FE000A5D4F1 /* PlaceDetailsViewModel.swift */; };
 		3191518C21863FE000A5D4F1 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191516021863FE000A5D4F1 /* TaskListViewModel.swift */; };
 		3191518D21863FE000A5D4F1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191516321863FE000A5D4F1 /* UIView.swift */; };
-		3191518E21863FE000A5D4F1 /* PersonCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191516421863FE000A5D4F1 /* PersonCommentView.swift */; };
 		3191518F21863FE000A5D4F1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191516521863FE000A5D4F1 /* MapView.swift */; };
-		3191519021863FE000A5D4F1 /* PersonCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3191516621863FE000A5D4F1 /* PersonCommentView.xib */; };
 		3191519121863FE000A5D4F1 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191516721863FE000A5D4F1 /* TaskCell.swift */; };
 		3191519221863FE000A5D4F1 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191516821863FE000A5D4F1 /* TextView.swift */; };
 		3191519321863FE000A5D4F1 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3191516921863FE000A5D4F1 /* MapView.xib */; };
@@ -40,6 +38,11 @@
 		319151A821863FE100A5D4F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3191518721863FE000A5D4F1 /* Assets.xcassets */; };
 		319151A921863FE100A5D4F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3191518821863FE000A5D4F1 /* LaunchScreen.storyboard */; };
 		319151AA21863FE100A5D4F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191518A21863FE000A5D4F1 /* AppDelegate.swift */; };
+		319151AD2186419100A5D4F1 /* CommentaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319151AB2186419100A5D4F1 /* CommentaryCell.swift */; };
+		319151AE2186419100A5D4F1 /* CommentaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319151AC2186419100A5D4F1 /* CommentaryCell.xib */; };
+		319151B22186456A00A5D4F1 /* CommentariesCollectionXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319151B02186456A00A5D4F1 /* CommentariesCollectionXIB.swift */; };
+		319151B32186456A00A5D4F1 /* CommentariesCollectionXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319151B12186456A00A5D4F1 /* CommentariesCollectionXIB.xib */; };
+		319151B52186488A00A5D4F1 /* CommentariesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319151B42186488A00A5D4F1 /* CommentariesViewModel.swift */; };
 		31A24B8F2185299300AD8196 /* ResponseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B8E2185299300AD8196 /* ResponseContainer.swift */; };
 		31A24BB02185598800AD8196 /* TasksPopulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BAF2185598800AD8196 /* TasksPopulationTests.swift */; };
 		31A24BD32186271400AD8196 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BD22186271400AD8196 /* String.swift */; };
@@ -73,9 +76,7 @@
 		3191515F21863FE000A5D4F1 /* PlaceDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewModel.swift; sourceTree = "<group>"; };
 		3191516021863FE000A5D4F1 /* TaskListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		3191516321863FE000A5D4F1 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		3191516421863FE000A5D4F1 /* PersonCommentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCommentView.swift; sourceTree = "<group>"; };
 		3191516521863FE000A5D4F1 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		3191516621863FE000A5D4F1 /* PersonCommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCommentView.xib; sourceTree = "<group>"; };
 		3191516721863FE000A5D4F1 /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		3191516821863FE000A5D4F1 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		3191516921863FE000A5D4F1 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
@@ -102,6 +103,11 @@
 		3191518721863FE000A5D4F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3191518921863FE000A5D4F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3191518A21863FE000A5D4F1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		319151AB2186419100A5D4F1 /* CommentaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentaryCell.swift; sourceTree = "<group>"; };
+		319151AC2186419100A5D4F1 /* CommentaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentaryCell.xib; sourceTree = "<group>"; };
+		319151B02186456A00A5D4F1 /* CommentariesCollectionXIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentariesCollectionXIB.swift; sourceTree = "<group>"; };
+		319151B12186456A00A5D4F1 /* CommentariesCollectionXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentariesCollectionXIB.xib; sourceTree = "<group>"; };
+		319151B42186488A00A5D4F1 /* CommentariesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentariesViewModel.swift; sourceTree = "<group>"; };
 		31A24B8E2185299300AD8196 /* ResponseContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseContainer.swift; sourceTree = "<group>"; };
 		31A24BAF2185598800AD8196 /* TasksPopulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksPopulationTests.swift; sourceTree = "<group>"; };
 		31A24BD22186271400AD8196 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -164,12 +170,12 @@
 		315774AD2184FADB000A4792 /* ServicesApp */ = {
 			isa = PBXGroup;
 			children = (
-				3191517621863FE000A5D4F1 /* Model */,
 				3191518621863FE000A5D4F1 /* Support */,
-				3191516121863FE000A5D4F1 /* View */,
-				3191515E21863FE000A5D4F1 /* ViewModel */,
-				313EE786218504A200960EF9 /* Util */,
 				31A24B8D2185297E00AD8196 /* Auxiliar */,
+				313EE786218504A200960EF9 /* Util */,
+				3191517621863FE000A5D4F1 /* Model */,
+				3191515E21863FE000A5D4F1 /* ViewModel */,
+				3191516121863FE000A5D4F1 /* View */,
 				315774BA2184FADE000A4792 /* Info.plist */,
 			);
 			path = ServicesApp;
@@ -198,6 +204,7 @@
 			children = (
 				3191515F21863FE000A5D4F1 /* PlaceDetailsViewModel.swift */,
 				3191516021863FE000A5D4F1 /* TaskListViewModel.swift */,
+				319151B42186488A00A5D4F1 /* CommentariesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -205,11 +212,11 @@
 		3191516121863FE000A5D4F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				319151AF2186425300A5D4F1 /* Cell */,
 				3191516221863FE000A5D4F1 /* Xib */,
 				3191516A21863FE000A5D4F1 /* Main.storyboard */,
 				3191516C21863FE000A5D4F1 /* Controller */,
 				3191517021863FE000A5D4F1 /* Extensions */,
-				3191517421863FE000A5D4F1 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,13 +224,10 @@
 		3191516221863FE000A5D4F1 /* Xib */ = {
 			isa = PBXGroup;
 			children = (
-				3191516321863FE000A5D4F1 /* UIView.swift */,
-				3191516421863FE000A5D4F1 /* PersonCommentView.swift */,
-				3191516521863FE000A5D4F1 /* MapView.swift */,
-				3191516621863FE000A5D4F1 /* PersonCommentView.xib */,
-				3191516721863FE000A5D4F1 /* TaskCell.swift */,
-				3191516821863FE000A5D4F1 /* TextView.swift */,
 				3191516921863FE000A5D4F1 /* MapView.xib */,
+				3191516521863FE000A5D4F1 /* MapView.swift */,
+				319151B02186456A00A5D4F1 /* CommentariesCollectionXIB.swift */,
+				319151B12186456A00A5D4F1 /* CommentariesCollectionXIB.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -241,19 +245,13 @@
 		3191517021863FE000A5D4F1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3191516321863FE000A5D4F1 /* UIView.swift */,
+				3191516821863FE000A5D4F1 /* TextView.swift */,
 				3191517121863FE000A5D4F1 /* UIViewController.swift */,
 				3191517221863FE000A5D4F1 /* UIImageView.swift */,
 				3191517321863FE000A5D4F1 /* UIAlertController.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		3191517421863FE000A5D4F1 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				3191517521863FE000A5D4F1 /* TaskCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		3191517621863FE000A5D4F1 /* Model */ = {
@@ -307,6 +305,17 @@
 				3191518A21863FE000A5D4F1 /* AppDelegate.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		319151AF2186425300A5D4F1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3191517521863FE000A5D4F1 /* TaskCell.xib */,
+				3191516721863FE000A5D4F1 /* TaskCell.swift */,
+				319151AC2186419100A5D4F1 /* CommentaryCell.xib */,
+				319151AB2186419100A5D4F1 /* CommentaryCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		31A24B8D2185297E00AD8196 /* Auxiliar */ = {
@@ -422,8 +431,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3191519B21863FE000A5D4F1 /* TaskCell.xib in Resources */,
+				319151AE2186419100A5D4F1 /* CommentaryCell.xib in Resources */,
 				3191519421863FE000A5D4F1 /* Main.storyboard in Resources */,
-				3191519021863FE000A5D4F1 /* PersonCommentView.xib in Resources */,
+				319151B32186456A00A5D4F1 /* CommentariesCollectionXIB.xib in Resources */,
 				319151A921863FE100A5D4F1 /* LaunchScreen.storyboard in Resources */,
 				3191519321863FE000A5D4F1 /* MapView.xib in Resources */,
 				319151A821863FE100A5D4F1 /* Assets.xcassets in Resources */,
@@ -451,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319151B22186456A00A5D4F1 /* CommentariesCollectionXIB.swift in Sources */,
 				3191518D21863FE000A5D4F1 /* UIView.swift in Sources */,
 				3191519C21863FE000A5D4F1 /* Place.swift in Sources */,
 				3191519F21863FE000A5D4F1 /* PlacesDataSource.swift in Sources */,
@@ -462,12 +473,13 @@
 				3191519D21863FE000A5D4F1 /* Commentary.swift in Sources */,
 				31A24BD32186271400AD8196 /* String.swift in Sources */,
 				3191519521863FE000A5D4F1 /* ImageColor.swift in Sources */,
-				3191518E21863FE000A5D4F1 /* PersonCommentView.swift in Sources */,
 				319151A321863FE000A5D4F1 /* Result.swift in Sources */,
 				3191519121863FE000A5D4F1 /* TaskCell.swift in Sources */,
 				3191519A21863FE000A5D4F1 /* UIAlertController.swift in Sources */,
+				319151B52186488A00A5D4F1 /* CommentariesViewModel.swift in Sources */,
 				3191518F21863FE000A5D4F1 /* MapView.swift in Sources */,
 				319151A421863FE000A5D4F1 /* GetList.swift in Sources */,
+				319151AD2186419100A5D4F1 /* CommentaryCell.swift in Sources */,
 				3191519221863FE000A5D4F1 /* TextView.swift in Sources */,
 				3191519721863FE000A5D4F1 /* PlaceDetailViewController.swift in Sources */,
 				319151AA21863FE100A5D4F1 /* AppDelegate.swift in Sources */,
