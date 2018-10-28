@@ -375,7 +375,7 @@
                     <connections>
                         <outlet property="cityNameLabel" destination="hSC-gX-V23" id="lA9-Wa-xgQ"/>
                         <outlet property="descriptionTextView" destination="Y2p-Rr-dOm" id="KiD-Fl-D02"/>
-                        <outlet property="personCommentariesView" destination="DgU-rY-8iD" id="mTf-FS-Mgx"/>
+                        <outlet property="personCommentView" destination="byC-Im-UYj" id="Bxr-BQ-cHC"/>
                         <outlet property="placeImageView" destination="dfa-SW-KDb" id="tDN-Sb-pWK"/>
                         <outlet property="scrollView" destination="0bI-K7-W4t" id="khx-Kk-fMG"/>
                     </connections>
