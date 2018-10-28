@@ -413,6 +413,7 @@
                     <connections>
                         <outlet property="addressPointView" destination="Cd4-gm-sXl" id="fPV-2r-1qE"/>
                         <outlet property="cityNameLabel" destination="hSC-gX-V23" id="lA9-Wa-xgQ"/>
+                        <outlet property="commentaryView" destination="byC-Im-UYj" id="5z6-A2-DE3"/>
                         <outlet property="descriptionTextView" destination="Y2p-Rr-dOm" id="KiD-Fl-D02"/>
                         <outlet property="favoritesView" destination="LME-Cb-q6x" id="xuT-cD-LcM"/>
                         <outlet property="mapView" destination="8ah-lt-ZnT" id="Mjd-uz-0UL"/>

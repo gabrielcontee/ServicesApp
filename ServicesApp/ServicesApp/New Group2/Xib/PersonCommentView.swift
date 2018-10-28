@@ -37,6 +37,11 @@ class PersonCommentView: UIView {
         personCommentDescripTextView.isScrollEnabled = false
     }
     
-    
-
+    func setCommentaryElements(imageUrl: URL, personName: String, commentTitle: String, commentDescription: String){
+        personImageView.downloaded(url: imageUrl) {
+        }
+        personNameLabel.text = personName
+        personCommentTitleLabel.text = commentTitle
+        personCommentDescripTextView.text = commentDescription
+    }
 }
