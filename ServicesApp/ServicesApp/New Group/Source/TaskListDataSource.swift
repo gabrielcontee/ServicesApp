@@ -19,7 +19,7 @@ class TaskListDataSource: NSObject {
     // Sends a fetch request for the list of tasks from API
     func fetchTaskList(completion: @escaping (Error?)->()){
         
-        apiClient.sendSimpleRequest(GetList()) { (result) in
+        apiClient.send(GetList()) { (result) in
             switch result{
             case .success(let tasks):
                 self.tasks = tasks

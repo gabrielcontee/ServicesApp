@@ -20,8 +20,8 @@ class PlacesDataSource: NSObject{
     func fetchPlaceData(idString: String, completion: @escaping (Error?)->()){
         apiClient.send(GetPlace(idString: idString)) { (result) in
             switch result{
-            case .success(let places):
-                self.placeData = places
+            case .success(let place):
+                self.placeData = place
                 completion(nil)
             case .failure(let error):
                 print(error)

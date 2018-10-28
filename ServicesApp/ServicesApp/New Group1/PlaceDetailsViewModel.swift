@@ -12,6 +12,8 @@ class PlaceDetailsViewModel: NSObject {
     
     private lazy var dataSource = PlacesDataSource()
     
+    lazy var placeName: String = ""
+    
     func fillDescriptionLabel(with string: String) -> String{
         if string != ""{
             return string
@@ -24,7 +26,9 @@ class PlaceDetailsViewModel: NSObject {
     func fetchPlaceData(placeIdString: String, completion: @escaping ()->()){
         dataSource.fetchPlaceData(idString: placeIdString) { (error) in
             if error == nil{
-//                print(self.dataSource.placeDict)
+                let placeInfo = self.dataSource.placeData
+                self.placeName = placeInfo?.cidade ?? ""
+                
                 completion()
             }else{
                 print("Could not load place details")
