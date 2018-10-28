@@ -18,6 +18,9 @@ class MainMenuViewController: UIViewController {
         super.viewDidLoad()
         tasksCollectionView.delegate = self
         tasksCollectionView.dataSource = self
+        let nib = UINib(nibName: String(describing: TaskCell.self), bundle: nil)
+        tasksCollectionView.register(nib, forCellWithReuseIdentifier: String(describing: TaskCell.self))
+        
         viewModel.fetchDelegate = self
         viewModel.errorDelegate = self
         
@@ -63,7 +66,6 @@ extension MainMenuViewController: UICollectionViewDataSource{
         
         let heroCell = tasksCollectionView.dequeueReusableCell(withReuseIdentifier: "taskCell", for: indexPath) as! TaskCell
         let data = viewModel.task(for: indexPath.row)
-        heroCell.setup(imageURL: data?.thumbnail)
         
         return heroCell
     }
@@ -91,7 +93,7 @@ extension MainMenuViewController: ErrorAlertDelegate{
     
     func alertError(msg: String) {
         let alert = UIAlertController.alertUser(msg) { (action) in
-            self.viewModel.fetchAllHeroes()
+            self.viewModel.fetchAllTasks()
         }
         self.present(alert, animated: true, completion: nil)
     }
