@@ -92,10 +92,12 @@ extension MainMenuViewController: TaskFetchDelegate{
 extension MainMenuViewController: ErrorAlertDelegate{
     
     func alertError(msg: String) {
-        let alert = UIAlertController.alertUser(msg) { (action) in
-            self.viewModel.fetchAllTasks()
+        DispatchQueue.main.async {
+            let alert = UIAlertController.alertUser(msg) { (action) in
+                self.viewModel.fetchAllTasks()
+            }
+            self.present(alert, animated: true, completion: nil)
         }
-        self.present(alert, animated: true, completion: nil)
     }
 }
 
