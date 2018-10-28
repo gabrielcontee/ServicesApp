@@ -16,7 +16,6 @@ class PersonCommentView: UIView {
     @IBOutlet weak var personCommentDescripTextView: UITextView!{
         didSet{
             personCommentDescripTextView.adjustUITextViewHeight(arg: personCommentDescripTextView)
-            
         }
     }
     

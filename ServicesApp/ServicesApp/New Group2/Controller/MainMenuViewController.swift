@@ -18,6 +18,7 @@ class MainMenuViewController: UIViewController {
         super.viewDidLoad()
         tasksCollectionView.delegate = self
         tasksCollectionView.dataSource = self
+        
         let nib = UINib(nibName: String(describing: TaskCell.self), bundle: nil)
         tasksCollectionView.register(nib, forCellWithReuseIdentifier: String(describing: TaskCell.self))
         
@@ -62,9 +63,9 @@ extension MainMenuViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let taskCell = tasksCollectionView.dequeueReusableCell(withReuseIdentifier: "taskCell", for: indexPath) as! TaskCell
-        let data = viewModel.task(for: indexPath.row)
-//        taskCell.setup(title: "lala")
+        let taskCell = tasksCollectionView.dequeueReusableCell(withReuseIdentifier: "TaskCell", for: indexPath) as! TaskCell
+        let title = viewModel.task(for: indexPath.row)
+        taskCell.setup(title: title)
         
         return taskCell
     }

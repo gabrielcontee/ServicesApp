@@ -10,5 +10,5 @@ import Foundation
 
 struct Task: Decodable{
     
-    let name: [String]
+    let lista: [String]
 }

@@ -38,6 +38,8 @@
 		31A24BC121857A2900AD8196 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BC021857A2900AD8196 /* UIView.swift */; };
 		31A24BC72185862C00AD8196 /* PlaceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BC62185862C00AD8196 /* PlaceDetailsViewModel.swift */; };
 		31A24BC9218589A000AD8196 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BC8218589A000AD8196 /* UIViewController.swift */; };
+		31A24BCC2185F94E00AD8196 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BCA2185F94E00AD8196 /* TextView.swift */; };
+		31A24BCD2185F94E00AD8196 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BCB2185F94E00AD8196 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		31A24BC021857A2900AD8196 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = "ServicesApp/New Group2/Xib/UIView.swift"; sourceTree = SOURCE_ROOT; };
 		31A24BC62185862C00AD8196 /* PlaceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewModel.swift; sourceTree = "<group>"; };
 		31A24BC8218589A000AD8196 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		31A24BCA2185F94E00AD8196 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		31A24BCB2185F94E00AD8196 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,7 +286,7 @@
 		31A24BA721854BC700AD8196 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				31A24BAA21854C0300AD8196 /* TaskCell.swift */,
+				31A24BAB21854C0300AD8196 /* TaskCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -290,9 +294,11 @@
 		31A24BAE21854C0C00AD8196 /* Xib */ = {
 			isa = PBXGroup;
 			children = (
-				31A24BAB21854C0300AD8196 /* TaskCell.xib */,
 				31A24BBC2185774500AD8196 /* PersonCommentView.xib */,
 				31A24BBA2185773900AD8196 /* PersonCommentView.swift */,
+				31A24BAA21854C0300AD8196 /* TaskCell.swift */,
+				31A24BCA2185F94E00AD8196 /* TextView.swift */,
+				31A24BCB2185F94E00AD8196 /* UIView.swift */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -439,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31A24BCD2185F94E00AD8196 /* UIView.swift in Sources */,
 				31A24B9D21852DB200AD8196 /* Task.swift in Sources */,
 				31A24BAC21854C0300AD8196 /* TaskCell.swift in Sources */,
 				31A24BC121857A2900AD8196 /* UIView.swift in Sources */,
@@ -453,6 +460,7 @@
 				31A24B9F2185336E00AD8196 /* TaskListDataSource.swift in Sources */,
 				31A24B8821851A5D00AD8196 /* ClientAPI.swift in Sources */,
 				31A24BB321855C6900AD8196 /* PlaceDetailViewController.swift in Sources */,
+				31A24BCC2185F94E00AD8196 /* TextView.swift in Sources */,
 				31A24BC9218589A000AD8196 /* UIViewController.swift in Sources */,
 				31A24BBB2185773900AD8196 /* PersonCommentView.swift in Sources */,
 				31A24B8A2185291500AD8196 /* APIRequest.swift in Sources */,

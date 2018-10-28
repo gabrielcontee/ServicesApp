@@ -15,20 +15,11 @@ class TaskCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        addShadow()
+        self.addShadow()
     }
     
     func setup(title: String?){
         taskTitleLabel.text = title
-    }
-    
-    func addShadow(){
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOpacity = 0.75
-        self.layer.shadowOffset = CGSize.zero
-        self.layer.shadowRadius = 10
-        self.layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
-        self.layer.shouldRasterize = true
     }
     
 

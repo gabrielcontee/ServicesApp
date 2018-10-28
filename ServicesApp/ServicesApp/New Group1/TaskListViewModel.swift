@@ -22,24 +22,24 @@ class TaskListViewModel: NSObject{
     
     var fetchDelegate: TaskFetchDelegate?
     var errorDelegate: ErrorAlertDelegate?
-    var tasks: [Task] = []
+    var tasks: Task?
     
     func numberOfTasks() -> Int{
-        return tasks.count
+        return tasks?.lista.count ?? 0
     }
     
-    func task(for index: Int) -> Task?{
-        guard tasks.isEmpty == false else {
+    func task(for index: Int) -> String?{
+        guard tasks?.lista.isEmpty == false else {
             return nil
         }
-        return tasks[index]
+        return tasks?.lista[index]
     }
     
     func fetchAllTasks(completion:(()->())? = nil){
         dataSource.fetchTaskList { (error) in
             if error == nil{
                 print("Finished fetching tasks!")
-                self.tasks = self.dataSource.tasks
+                self.tasks = self.dataSource.tasks ?? nil
                 self.fetchDelegate?.loadData()
                 completion?()
             }else{
