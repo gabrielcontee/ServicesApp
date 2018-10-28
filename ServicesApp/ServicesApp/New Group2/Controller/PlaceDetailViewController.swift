@@ -68,6 +68,7 @@ class PlaceDetailViewController: UIViewController {
     }
     
     @IBAction func callNumberAction(_ sender: UIButton) {
+        viewModel.placePhone.call()
     }
     
     @IBAction func goToServicesScreen(_ sender: UIButton) {

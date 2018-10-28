@@ -41,6 +41,7 @@
 		31A24BCC2185F94E00AD8196 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BCA2185F94E00AD8196 /* TextView.swift */; };
 		31A24BCD2185F94E00AD8196 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BCB2185F94E00AD8196 /* UIView.swift */; };
 		31A24BD12186162C00AD8196 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BD02186162C00AD8196 /* UIImageView.swift */; };
+		31A24BD32186271400AD8196 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BD22186271400AD8196 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		31A24BCA2185F94E00AD8196 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		31A24BCB2185F94E00AD8196 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		31A24BD02186162C00AD8196 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		31A24BD22186271400AD8196 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				31A24BB4218565CB00AD8196 /* ImageColor.swift */,
 				31A24BBE218578C000AD8196 /* TextView.swift */,
 				31A24BC021857A2900AD8196 /* UIView.swift */,
+				31A24BD22186271400AD8196 /* String.swift */,
 			);
 			name = Util;
 			path = U;
@@ -466,6 +469,7 @@
 				31A24BB321855C6900AD8196 /* PlaceDetailViewController.swift in Sources */,
 				31A24BCC2185F94E00AD8196 /* TextView.swift in Sources */,
 				31A24BC9218589A000AD8196 /* UIViewController.swift in Sources */,
+				31A24BD32186271400AD8196 /* String.swift in Sources */,
 				31A24BBB2185773900AD8196 /* PersonCommentView.swift in Sources */,
 				31A24B8A2185291500AD8196 /* APIRequest.swift in Sources */,
 				31A24B8C2185293300AD8196 /* APIResponse.swift in Sources */,
