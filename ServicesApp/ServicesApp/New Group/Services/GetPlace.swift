@@ -18,9 +18,9 @@ struct GetPlace: APIRequest {
     }
     
     // Parameters
-    private let id: Int
+    private let id: String
     
-    init(id: Int) {
-        self.id = id
+    init(idString: String) {
+        self.id = idString
     }
 }
