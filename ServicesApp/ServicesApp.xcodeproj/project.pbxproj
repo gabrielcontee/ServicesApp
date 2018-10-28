@@ -23,7 +23,8 @@
 		31A24B9621852C9E00AD8196 /* GetPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9521852C9E00AD8196 /* GetPlace.swift */; };
 		31A24B9921852D0C00AD8196 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9821852D0C00AD8196 /* Place.swift */; };
 		31A24B9B21852D6400AD8196 /* GetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9A21852D6400AD8196 /* GetList.swift */; };
-		31A24B9D21852DB200AD8196 /* TasksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9C21852DB200AD8196 /* TasksList.swift */; };
+		31A24B9D21852DB200AD8196 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9C21852DB200AD8196 /* Task.swift */; };
+		31A24B9F2185336E00AD8196 /* TaskListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9E2185336E00AD8196 /* TaskListDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,8 @@
 		31A24B9521852C9E00AD8196 /* GetPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlace.swift; sourceTree = "<group>"; };
 		31A24B9821852D0C00AD8196 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		31A24B9A21852D6400AD8196 /* GetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetList.swift; sourceTree = "<group>"; };
-		31A24B9C21852DB200AD8196 /* TasksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksList.swift; sourceTree = "<group>"; };
+		31A24B9C21852DB200AD8196 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		31A24B9E2185336E00AD8196 /* TaskListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 		31A24B9421852C4200AD8196 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				31A24B9E2185336E00AD8196 /* TaskListDataSource.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -227,7 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				31A24B9821852D0C00AD8196 /* Place.swift */,
-				31A24B9C21852DB200AD8196 /* TasksList.swift */,
+				31A24B9C21852DB200AD8196 /* Task.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -363,10 +366,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31A24B9D21852DB200AD8196 /* TasksList.swift in Sources */,
+				31A24B9D21852DB200AD8196 /* Task.swift in Sources */,
 				31A24B9621852C9E00AD8196 /* GetPlace.swift in Sources */,
 				31A24B86218507A000AD8196 /* MainMenuViewController.swift in Sources */,
 				31A24B9B21852D6400AD8196 /* GetList.swift in Sources */,
+				31A24B9F2185336E00AD8196 /* TaskListDataSource.swift in Sources */,
 				31A24B8821851A5D00AD8196 /* ClientAPI.swift in Sources */,
 				31A24B8A2185291500AD8196 /* APIRequest.swift in Sources */,
 				31A24B8C2185293300AD8196 /* APIResponse.swift in Sources */,
