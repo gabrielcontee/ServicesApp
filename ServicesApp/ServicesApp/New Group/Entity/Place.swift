@@ -21,4 +21,10 @@ struct Place: Decodable{
     let endereco: String?
     let latitude: Double?
     let longitude: Double?
+    
+    let comentarios: [Commentary]?
+    
+
 }
+
+

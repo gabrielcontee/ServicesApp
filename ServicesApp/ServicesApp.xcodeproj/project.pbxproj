@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31494E2721863B62002CFC3B /* Commentary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31494E2621863B62002CFC3B /* Commentary.swift */; };
 		315774AF2184FADC000A4792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315774AE2184FADC000A4792 /* AppDelegate.swift */; };
 		315774B42184FADC000A4792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315774B22184FADC000A4792 /* Main.storyboard */; };
 		315774B62184FADE000A4792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315774B52184FADE000A4792 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31494E2621863B62002CFC3B /* Commentary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commentary.swift; sourceTree = "<group>"; };
 		315774AB2184FADB000A4792 /* ServicesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServicesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		315774AE2184FADC000A4792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		315774B32184FADC000A4792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 			children = (
 				31A24B9821852D0C00AD8196 /* Place.swift */,
 				31A24B9C21852DB200AD8196 /* Task.swift */,
+				31494E2621863B62002CFC3B /* Commentary.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				31A24B9121852AE300AD8196 /* Result.swift in Sources */,
 				31A24B9321852B6A00AD8196 /* APIError.swift in Sources */,
 				31A24BA6218549B000AD8196 /* UIAlertController.swift in Sources */,
+				31494E2721863B62002CFC3B /* Commentary.swift in Sources */,
 				31A24B8F2185299300AD8196 /* ResponseContainer.swift in Sources */,
 				315774AF2184FADC000A4792 /* AppDelegate.swift in Sources */,
 				31A24B9921852D0C00AD8196 /* Place.swift in Sources */,
