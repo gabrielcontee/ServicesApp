@@ -12,7 +12,24 @@ class PlaceDetailsViewModel: NSObject {
     
     private lazy var dataSource = PlacesDataSource()
     
-    lazy var placeName: String = ""
+    lazy var cityName: String = ""
+    lazy var neighborhoodName: String = ""
+    lazy var placeAddress: String = ""
+    lazy var placeLatitude: Double = 0.0
+    lazy var placeLongitude: Double = 0.0
+    lazy var placePhone: String = ""
+    lazy var placeTitle: String = ""
+    lazy var placeDescription: String = ""
+    
+    private lazy var placePhotoString = ""
+    var placePhotoURL: URL{
+        return URL(string: placePhotoString)!
+    }
+    
+    private lazy var placeLogoString = ""
+    var placeLogoURL: URL{
+        return URL(string: placeLogoString)!
+    }
     
     func fillDescriptionLabel(with string: String) -> String{
         if string != ""{
@@ -27,8 +44,18 @@ class PlaceDetailsViewModel: NSObject {
         dataSource.fetchPlaceData(idString: placeIdString) { (error) in
             if error == nil{
                 let placeInfo = self.dataSource.placeData
-                self.placeName = placeInfo?.cidade ?? ""
-                
+                self.cityName = placeInfo?.cidade ?? ""
+                self.neighborhoodName = placeInfo?.bairro ?? ""
+                self.neighborhoodName = placeInfo?.endereco ?? ""
+                self.placePhone = placeInfo?.telefone ?? ""
+                self.placeTitle = placeInfo?.titulo ?? ""
+                self.placeDescription = placeInfo?.texto ?? ""
+                self.placePhotoString = placeInfo?.urlFoto ?? ""
+                self.placeLogoString = placeInfo?.urlLogo ?? ""
+                if let latitude = placeInfo?.latitude, let longitude = placeInfo?.longitude{
+                    self.placeLatitude = latitude
+                    self.placeLongitude = longitude
+                }
                 completion()
             }else{
                 print("Could not load place details")

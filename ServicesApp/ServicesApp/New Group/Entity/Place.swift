@@ -13,8 +13,8 @@ struct Place: Decodable{
     let id: String?
     let cidade: String?
     let bairro: String?
-//    let urlFoto: Image?
-//    let urlLogo: Image?
+    let urlFoto: String?
+    let urlLogo: String?
     let titulo: String?
     let telefone: String?
     let texto: String?
