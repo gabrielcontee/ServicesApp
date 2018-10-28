@@ -25,6 +25,7 @@
 		31A24B9B21852D6400AD8196 /* GetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9A21852D6400AD8196 /* GetList.swift */; };
 		31A24B9D21852DB200AD8196 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9C21852DB200AD8196 /* Task.swift */; };
 		31A24B9F2185336E00AD8196 /* TaskListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B9E2185336E00AD8196 /* TaskListDataSource.swift */; };
+		31A24BA1218544A100AD8196 /* PlacesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BA0218544A100AD8196 /* PlacesDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		31A24B9A21852D6400AD8196 /* GetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetList.swift; sourceTree = "<group>"; };
 		31A24B9C21852DB200AD8196 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		31A24B9E2185336E00AD8196 /* TaskListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDataSource.swift; sourceTree = "<group>"; };
+		31A24BA0218544A100AD8196 /* PlacesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				31A24B9E2185336E00AD8196 /* TaskListDataSource.swift */,
+				31A24BA0218544A100AD8196 /* PlacesDataSource.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 			files = (
 				31A24B9D21852DB200AD8196 /* Task.swift in Sources */,
 				31A24B9621852C9E00AD8196 /* GetPlace.swift in Sources */,
+				31A24BA1218544A100AD8196 /* PlacesDataSource.swift in Sources */,
 				31A24B86218507A000AD8196 /* MainMenuViewController.swift in Sources */,
 				31A24B9B21852D6400AD8196 /* GetList.swift in Sources */,
 				31A24B9F2185336E00AD8196 /* TaskListDataSource.swift in Sources */,
