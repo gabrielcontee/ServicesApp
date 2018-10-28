@@ -31,6 +31,7 @@
 		31A24BAD21854C0300AD8196 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31A24BAB21854C0300AD8196 /* TaskCell.xib */; };
 		31A24BB02185598800AD8196 /* TasksPopulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BAF2185598800AD8196 /* TasksPopulationTests.swift */; };
 		31A24BB321855C6900AD8196 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BB221855C6900AD8196 /* PlaceDetailViewController.swift */; };
+		31A24BB5218565CB00AD8196 /* ImageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BB4218565CB00AD8196 /* ImageColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		31A24BAB21854C0300AD8196 /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
 		31A24BAF2185598800AD8196 /* TasksPopulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksPopulationTests.swift; sourceTree = "<group>"; };
 		31A24BB221855C6900AD8196 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
+		31A24BB4218565CB00AD8196 /* ImageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageColor.swift; path = "ServicesApp/New Group2/Controller/ImageColor.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		313EE786218504A200960EF9 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				31A24BB4218565CB00AD8196 /* ImageColor.swift */,
 			);
 			name = Util;
 			path = U;
@@ -420,6 +423,7 @@
 				31A24B9D21852DB200AD8196 /* Task.swift in Sources */,
 				31A24BAC21854C0300AD8196 /* TaskCell.swift in Sources */,
 				31A24B9621852C9E00AD8196 /* GetPlace.swift in Sources */,
+				31A24BB5218565CB00AD8196 /* ImageColor.swift in Sources */,
 				31A24BA32185479600AD8196 /* TaskListViewModel.swift in Sources */,
 				31A24BA1218544A100AD8196 /* PlacesDataSource.swift in Sources */,
 				31A24B86218507A000AD8196 /* MainMenuViewController.swift in Sources */,
