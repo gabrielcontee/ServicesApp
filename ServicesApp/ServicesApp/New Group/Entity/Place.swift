@@ -10,8 +10,8 @@ import Foundation
 
 struct Place: Decodable{
     
-    let id: Int
-    let name: String?
+    let id: String
+    let cidade: String
 //    let description: String?
 //    let thumbnail: Image?
 }

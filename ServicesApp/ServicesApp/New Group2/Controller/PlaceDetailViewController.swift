@@ -26,7 +26,7 @@ class PlaceDetailViewController: UIViewController {
     
     private lazy var viewModel = PlaceDetailsViewModel()
     
-    var placeName: String = ""
+    var placeName: String = "ultimo"
     
     override func viewDidLoad() {
         super.viewDidLoad()

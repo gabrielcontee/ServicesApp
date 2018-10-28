@@ -14,7 +14,7 @@ class ClientAPI {
     private let session = URLSession(configuration: .default)
     
     /// Sends a request to Marvel servers, calling the completion method when finished
-    func send<T: APIRequest>(_ request: T, completion: @escaping ResultCallback<ResponseContainer<T.Response>>) {
+    func send<T: APIRequest>(_ request: T, completion: @escaping ResultCallback<T.Response>) {
         
         let endpoint = URL(string: baseEndpointUrl + request.resourceName)!
         
@@ -23,21 +23,14 @@ class ClientAPI {
                 do {
                     // Decode the top level response, and look up the decoded response to see
                     // if it's a success or a failure
-                    print(try? JSONSerialization.jsonObject(with: data, options: []))
                     
-                    let response = try JSONDecoder().decode(APIResponse<T.Response>.self, from: data)
+                    let response = try? JSONDecoder().decode(T.Response.self, from: data)
                     
-                    
-                    if let responseContainer = response.data {
+                    if let responseContainer = response {
                         completion(.success(responseContainer))
-                    } else if let message = response.message {
-                        completion(.failure(APIError.server(message: message)))
                     } else {
-                        print("Error decoding")
                         completion(.failure(APIError.decoding))
                     }
-                } catch {
-                    completion(.failure(error))
                 }
             } else if let error = error {
                 completion(.failure(error))

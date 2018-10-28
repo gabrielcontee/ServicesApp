@@ -46,7 +46,8 @@ class MainMenuViewController: UIViewController {
             let detailsController: PlaceDetailViewController = segue.destination as! PlaceDetailViewController
             if let selectedIndexPath = tasksCollectionView.indexPathsForSelectedItems?.first{
                 let data = viewModel.task(for: selectedIndexPath.row)
-                detailsController.placeName = data?.name ?? ""
+                
+//                detailsController.placeName = data?.name ?? ""
             }
             
         }
@@ -63,7 +64,7 @@ extension MainMenuViewController: UICollectionViewDataSource{
         
         let taskCell = tasksCollectionView.dequeueReusableCell(withReuseIdentifier: "taskCell", for: indexPath) as! TaskCell
         let data = viewModel.task(for: indexPath.row)
-        taskCell.setup(title: data?.name)
+//        taskCell.setup(title: "lala")
         
         return taskCell
     }
