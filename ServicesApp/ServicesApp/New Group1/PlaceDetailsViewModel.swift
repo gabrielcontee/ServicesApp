@@ -31,14 +31,9 @@ class PlaceDetailsViewModel: NSObject {
         return URL(string: placeLogoString)
     }
     
-    func fillDescriptionLabel(with string: String) -> String{
-        if string != ""{
-            return string
-        }else{
-            return "There is not an available description for this character until now :("
-        }
+    func buildHeaderTitleName() -> String{
+        return "\(cityName) - \(neighborhoodName)"
     }
-    
 
     func fetchPlaceData(placeIdString: String, completion: @escaping ()->()){
         dataSource.fetchPlaceData(idString: placeIdString) { (error) in
@@ -46,7 +41,7 @@ class PlaceDetailsViewModel: NSObject {
                 let placeInfo = self.dataSource.placeData
                 self.cityName = placeInfo?.cidade ?? ""
                 self.neighborhoodName = placeInfo?.bairro ?? ""
-                self.neighborhoodName = placeInfo?.endereco ?? ""
+                self.placeAddress = placeInfo?.endereco ?? ""
                 self.placePhone = placeInfo?.telefone ?? ""
                 self.placeTitle = placeInfo?.titulo ?? ""
                 self.placeDescription = placeInfo?.texto ?? ""
