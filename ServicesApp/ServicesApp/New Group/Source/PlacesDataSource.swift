@@ -14,14 +14,14 @@ class PlacesDataSource: NSObject{
     
     private lazy var apiClient = ClientAPI()
     
-    lazy var placeDict: [Id: Place] = [:]
+    var placeData: Place?
     
     // Sends a fetch request for the place by id from API
-    func fetchPlaces(id: Int, completion: @escaping (Error?)->()){
-        apiClient.send(GetPlace(id: id)) { (result) in
+    func fetchPlaceData(idString: String, completion: @escaping (Error?)->()){
+        apiClient.send(GetPlace(idString: idString)) { (result) in
             switch result{
-            case .success(let places):
-                self.placeDict[id] = places.results
+            case .success(let place):
+                self.placeData = place
                 completion(nil)
             case .failure(let error):
                 print(error)

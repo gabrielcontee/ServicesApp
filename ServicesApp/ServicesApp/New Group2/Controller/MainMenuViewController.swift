@@ -18,6 +18,7 @@ class MainMenuViewController: UIViewController {
         super.viewDidLoad()
         tasksCollectionView.delegate = self
         tasksCollectionView.dataSource = self
+        
         let nib = UINib(nibName: String(describing: TaskCell.self), bundle: nil)
         tasksCollectionView.register(nib, forCellWithReuseIdentifier: String(describing: TaskCell.self))
         
@@ -41,6 +42,17 @@ class MainMenuViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showPlaceDetails") {
+            let detailsController: PlaceDetailViewController = segue.destination as! PlaceDetailViewController
+            if let selectedIndexPath = tasksCollectionView.indexPathsForSelectedItems?.first{
+                let place = viewModel.task(for: selectedIndexPath.row)
+                detailsController.placeName = place ?? ""
+            }
+            
+        }
+    }
+    
 }
 
 extension MainMenuViewController: UICollectionViewDataSource{
@@ -50,9 +62,9 @@ extension MainMenuViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let taskCell = tasksCollectionView.dequeueReusableCell(withReuseIdentifier: "taskCell", for: indexPath) as! TaskCell
-        let data = viewModel.task(for: indexPath.row)
-        taskCell.setup(title: data?.name)
+        let taskCell = tasksCollectionView.dequeueReusableCell(withReuseIdentifier: "TaskCell", for: indexPath) as! TaskCell
+        let title = viewModel.task(for: indexPath.row)
+        taskCell.setup(title: title)
         
         return taskCell
     }
@@ -63,7 +75,7 @@ extension MainMenuViewController: UICollectionViewDataSource{
 extension MainMenuViewController: UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showCharacterDetails", sender: self)
+        performSegue(withIdentifier: "showPlaceDetails", sender: self)
     }
 }
 

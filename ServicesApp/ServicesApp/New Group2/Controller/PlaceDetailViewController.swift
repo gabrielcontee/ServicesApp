@@ -11,10 +11,9 @@ import UIKit
 class PlaceDetailViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
-    
     @IBOutlet weak var placeImageView: UIImageView!
     @IBOutlet weak var cityNameLabel: UILabel!
-    
+    @IBOutlet weak var streetNameLabel: UILabel!
     
     @IBOutlet weak var descriptionTextView: UITextView!{
         didSet{
@@ -24,15 +23,48 @@ class PlaceDetailViewController: UIViewController {
     
     @IBOutlet weak var personCommentView: PersonCommentView!
     
+    @IBOutlet weak var addressPointView: UIView!{
+        didSet{
+            addressPointView.roundedView()
+        }
+    }
     
+    @IBOutlet weak var favoritesView: UIView!{
+        didSet{
+            favoritesView.roundedView()
+        }
+    }
     
+    private lazy var viewModel = PlaceDetailsViewModel()
+    private lazy var appDelegate = UIApplication.shared.delegate as? AppDelegate
+    
+    var placeName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let activityIndicator = UIViewController.displaySpinner(onView: self.view)
+        
+        viewModel.fetchPlaceData(placeIdString: placeName) {
+            self.setDownloadedData()
+            UIViewController.removeSpinner(spinner: activityIndicator)
+        }
+        
         addSearchNavigationItem()
         addNavigationBarTitleLabel()
         addStyleToNavigationBar()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+        appDelegate?.enableAllOrientation = false
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        appDelegate?.enableAllOrientation = true
     }
     
     @IBAction func callNumberAction(_ sender: UIButton) {
@@ -50,6 +82,20 @@ class PlaceDetailViewController: UIViewController {
     @IBAction func commentariesButtonPressed(_ sender: UIButton) {
         let yOffSet = CGPoint(x: self.view.frame.minX, y: personCommentView.frame.minY)
         self.scrollView.setContentOffset(yOffSet, animated: true)
+    }
+    
+    private func setDownloadedData(){
+        DispatchQueue.main.async {
+            self.cityNameLabel.text = self.viewModel.cityName
+            self.streetNameLabel.text = self.viewModel.neighborhoodName
+            self.descriptionTextView.text = self.viewModel.placeDescription
+            if let url = self.viewModel.placePhotoURL{
+                let activityIndicator = UIViewController.displaySpinner(onView: self.placeImageView)
+                self.placeImageView.downloaded(url: url, completion: {
+                    UIViewController.removeSpinner(spinner: activityIndicator)
+                })
+            }
+        }
     }
     
     func addStyleToNavigationBar(){

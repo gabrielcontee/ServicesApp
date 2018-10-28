@@ -14,13 +14,13 @@ struct GetPlace: APIRequest {
     
     // Notice how we create a composed resourceName
     var resourceName: String {
-        return "/tarefa/:\(id)"
+        return "/tarefa/\(id)"
     }
     
     // Parameters
-    private let id: Int
+    private let id: String
     
-    init(id: Int) {
-        self.id = id
+    init(idString: String) {
+        self.id = idString
     }
 }

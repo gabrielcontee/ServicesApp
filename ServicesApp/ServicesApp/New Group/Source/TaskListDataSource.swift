@@ -14,7 +14,7 @@ class TaskListDataSource: NSObject {
     
     private lazy var apiClient = ClientAPI()
     
-    lazy var tasks: [Task] = []
+    var tasks: Task?
     
     // Sends a fetch request for the list of tasks from API
     func fetchTaskList(completion: @escaping (Error?)->()){
@@ -22,7 +22,7 @@ class TaskListDataSource: NSObject {
         apiClient.send(GetList()) { (result) in
             switch result{
             case .success(let tasks):
-                print(tasks)
+                self.tasks = tasks
                 completion(nil)
             case .failure(let error):
                 print(error)
