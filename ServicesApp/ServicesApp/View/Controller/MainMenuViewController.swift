@@ -92,7 +92,7 @@ extension MainMenuViewController: ErrorAlertDelegate{
     
     func alertError(msg: String) {
         DispatchQueue.main.async {
-            let alert = UIAlertController.alertUser(msg) { (action) in
+            let alert = UIAlertController.alertUser(title: "Error", msg) { (action) in
                 self.viewModel.fetchAllTasks()
             }
             self.present(alert, animated: true, completion: nil)

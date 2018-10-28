@@ -10,8 +10,8 @@ import UIKit
 
 extension UIAlertController {
     
-    static func alertUser(_ msg : String, handler: ((UIAlertAction) -> Swift.Void)? = nil) -> UIAlertController {
-        let alert = UIAlertController(title: "Error", message: msg, preferredStyle: .alert)
+    static func alertUser(title: String, _ msg : String, handler: ((UIAlertAction) -> Swift.Void)? = nil) -> UIAlertController {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
         let errorAlert = UIAlertAction(title: "OK", style: .default, handler: handler)
         alert.addAction(errorAlert)
         return alert

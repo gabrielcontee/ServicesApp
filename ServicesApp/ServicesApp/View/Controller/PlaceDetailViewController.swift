@@ -21,7 +21,7 @@ class PlaceDetailViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var personCommentView: PersonCommentView!
+    
     
     @IBOutlet weak var addressPointView: UIView!{
         didSet{
@@ -34,6 +34,11 @@ class PlaceDetailViewController: UIViewController {
             favoritesView.roundedView()
         }
     }
+    
+    @IBOutlet weak var mapView: MapView!
+    
+    @IBOutlet weak var commentariesContainerView: UIView!
+    
     
     private lazy var viewModel = PlaceDetailsViewModel()
     private lazy var appDelegate = UIApplication.shared.delegate as? AppDelegate
@@ -51,7 +56,7 @@ class PlaceDetailViewController: UIViewController {
         }
         
         addSearchNavigationItem()
-        addNavigationBarTitleLabel()
+        addNavigationBarTitleLabel("")
         addStyleToNavigationBar()
     }
     
@@ -68,6 +73,7 @@ class PlaceDetailViewController: UIViewController {
     }
     
     @IBAction func callNumberAction(_ sender: UIButton) {
+        viewModel.placePhone.call()
     }
     
     @IBAction func goToServicesScreen(_ sender: UIButton) {
@@ -76,11 +82,13 @@ class PlaceDetailViewController: UIViewController {
 
     
     @IBAction func addressButtonPressed(_ sender: UIButton) {
-        UIAlertController.alertUser("Endereço aqui")
+        let addressPopUp = UIAlertController.alertUser(title: "Endereço", viewModel.placeAddress) { (_) in
+        }
+        self.present(addressPopUp, animated: true, completion: nil)
     }
     
     @IBAction func commentariesButtonPressed(_ sender: UIButton) {
-        let yOffSet = CGPoint(x: self.view.frame.minX, y: personCommentView.frame.minY)
+        let yOffSet = CGPoint(x: self.view.frame.minX, y: commentariesContainerView.frame.midY)
         self.scrollView.setContentOffset(yOffSet, animated: true)
     }
     
@@ -89,6 +97,9 @@ class PlaceDetailViewController: UIViewController {
             self.cityNameLabel.text = self.viewModel.cityName
             self.streetNameLabel.text = self.viewModel.neighborhoodName
             self.descriptionTextView.text = self.viewModel.placeDescription
+            self.addNavigationBarTitleLabel(self.viewModel.neighborhoodName)
+            self.mapView.centerOnLocation(lat: self.viewModel.placeLatitude, long: self.viewModel.placeLongitude)
+            
             if let url = self.viewModel.placePhotoURL{
                 let activityIndicator = UIViewController.displaySpinner(onView: self.placeImageView)
                 self.placeImageView.downloaded(url: url, completion: {
@@ -103,10 +114,10 @@ class PlaceDetailViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
-    func addNavigationBarTitleLabel(){
+    func addNavigationBarTitleLabel(_ placeName: String){
         
         if let navigationBar = self.navigationController?.navigationBar {
-            let firstFrame = CGRect(x: 0, y: 0, width: navigationBar.frame.width/2, height: navigationBar.frame.height)
+            let firstFrame = CGRect(x: 0, y: -4.5, width: navigationBar.frame.width/2, height: navigationBar.frame.height)
             
             let firstLabel = UILabel(frame: firstFrame)
             
@@ -123,7 +134,7 @@ class PlaceDetailViewController: UIViewController {
             //Add image to mutable string
             completeText.append(attachmentString)
             //Add your text to mutable string
-            let textAfterIcon = NSMutableAttributedString(string: "Porto Alegre - Moinhos de Vento")
+            let textAfterIcon = NSMutableAttributedString(string: viewModel.buildHeaderTitleName())
             completeText.append(textAfterIcon)
             firstLabel.textAlignment = .center
             firstLabel.attributedText = completeText
