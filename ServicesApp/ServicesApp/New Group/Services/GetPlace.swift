@@ -14,7 +14,7 @@ struct GetPlace: APIRequest {
     
     // Notice how we create a composed resourceName
     var resourceName: String {
-        return "tarefa/:\(id)"
+        return "/tarefa/:\(id)"
     }
     
     // Parameters
