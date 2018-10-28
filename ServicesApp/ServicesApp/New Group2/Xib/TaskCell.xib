@@ -45,6 +45,9 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="191" height="109"/>
+            <connections>
+                <outlet property="taskTitleLabel" destination="5ql-tU-YV3" id="iOE-8k-QpM"/>
+            </connections>
             <point key="canvasLocation" x="90" y="161"/>
         </collectionViewCell>
     </objects>

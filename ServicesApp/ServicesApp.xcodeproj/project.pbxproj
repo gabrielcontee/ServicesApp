@@ -11,7 +11,6 @@
 		315774B42184FADC000A4792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315774B22184FADC000A4792 /* Main.storyboard */; };
 		315774B62184FADE000A4792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315774B52184FADE000A4792 /* Assets.xcassets */; };
 		315774B92184FADE000A4792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315774B72184FADE000A4792 /* LaunchScreen.storyboard */; };
-		315774C42184FADE000A4792 /* ServicesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315774C32184FADE000A4792 /* ServicesAppTests.swift */; };
 		315774CF2184FADE000A4792 /* ServicesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315774CE2184FADE000A4792 /* ServicesAppUITests.swift */; };
 		31A24B86218507A000AD8196 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B85218507A000AD8196 /* MainMenuViewController.swift */; };
 		31A24B8821851A5D00AD8196 /* ClientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24B8721851A5D00AD8196 /* ClientAPI.swift */; };
@@ -30,6 +29,8 @@
 		31A24BA6218549B000AD8196 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BA5218549B000AD8196 /* UIAlertController.swift */; };
 		31A24BAC21854C0300AD8196 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BAA21854C0300AD8196 /* TaskCell.swift */; };
 		31A24BAD21854C0300AD8196 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31A24BAB21854C0300AD8196 /* TaskCell.xib */; };
+		31A24BB02185598800AD8196 /* TasksPopulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BAF2185598800AD8196 /* TasksPopulationTests.swift */; };
+		31A24BB321855C6900AD8196 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BB221855C6900AD8196 /* PlaceDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +58,6 @@
 		315774B82184FADE000A4792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		315774BA2184FADE000A4792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		315774BF2184FADE000A4792 /* ServicesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServicesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		315774C32184FADE000A4792 /* ServicesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAppTests.swift; sourceTree = "<group>"; };
 		315774C52184FADE000A4792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		315774CA2184FADE000A4792 /* ServicesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServicesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		315774CE2184FADE000A4792 /* ServicesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAppUITests.swift; sourceTree = "<group>"; };
@@ -79,6 +79,8 @@
 		31A24BA5218549B000AD8196 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		31A24BAA21854C0300AD8196 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		31A24BAB21854C0300AD8196 /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		31A24BAF2185598800AD8196 /* TasksPopulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksPopulationTests.swift; sourceTree = "<group>"; };
+		31A24BB221855C6900AD8196 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,8 +153,8 @@
 		315774C22184FADE000A4792 /* ServicesAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				315774C32184FADE000A4792 /* ServicesAppTests.swift */,
 				315774C52184FADE000A4792 /* Info.plist */,
+				31A24BAF2185598800AD8196 /* TasksPopulationTests.swift */,
 			);
 			path = ServicesAppTests;
 			sourceTree = "<group>";
@@ -203,11 +205,11 @@
 		31A24B832185059000AD8196 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				31A24BB121855C5900AD8196 /* Controller */,
 				31A24BAE21854C0C00AD8196 /* Xib */,
 				31A24BA721854BC700AD8196 /* Cell */,
 				31A24BA4218549A200AD8196 /* Extensions */,
 				315774B22184FADC000A4792 /* Main.storyboard */,
-				31A24B85218507A000AD8196 /* MainMenuViewController.swift */,
 			);
 			name = View;
 			path = "New Group2";
@@ -272,6 +274,15 @@
 				31A24BAB21854C0300AD8196 /* TaskCell.xib */,
 			);
 			path = Xib;
+			sourceTree = "<group>";
+		};
+		31A24BB121855C5900AD8196 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				31A24B85218507A000AD8196 /* MainMenuViewController.swift */,
+				31A24BB221855C6900AD8196 /* PlaceDetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +426,7 @@
 				31A24B9B21852D6400AD8196 /* GetList.swift in Sources */,
 				31A24B9F2185336E00AD8196 /* TaskListDataSource.swift in Sources */,
 				31A24B8821851A5D00AD8196 /* ClientAPI.swift in Sources */,
+				31A24BB321855C6900AD8196 /* PlaceDetailViewController.swift in Sources */,
 				31A24B8A2185291500AD8196 /* APIRequest.swift in Sources */,
 				31A24B8C2185293300AD8196 /* APIResponse.swift in Sources */,
 				31A24B9121852AE300AD8196 /* Result.swift in Sources */,
@@ -430,7 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				315774C42184FADE000A4792 /* ServicesAppTests.swift in Sources */,
+				31A24BB02185598800AD8196 /* TasksPopulationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

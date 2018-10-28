@@ -41,20 +41,6 @@ class MainMenuViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "showTaskDetails") {
-//            let detailsController: DetailsViewController = segue.destination as! DetailsViewController
-//            if let selectedIndexPath = tasksCollectionView.indexPathsForSelectedItems?.first{
-//                let data = viewModel.hero(for: selectedIndexPath.row)
-//                let cell = collectionView(tasksCollectionView, cellForItemAt: selectedIndexPath) as! HeroCell
-//                detailsController.heroId = data?.id ?? 0
-//                detailsController.heroName = data?.name ?? ""
-//                detailsController.heroImage = cell.heroImageView.image ?? UIImage(named: "marvel_logo")!
-//                detailsController.heroDescription = data?.description ?? ""
-//            }
-            
-        }
-    }
 }
 
 extension MainMenuViewController: UICollectionViewDataSource{
@@ -64,10 +50,11 @@ extension MainMenuViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let heroCell = tasksCollectionView.dequeueReusableCell(withReuseIdentifier: "taskCell", for: indexPath) as! TaskCell
+        let taskCell = tasksCollectionView.dequeueReusableCell(withReuseIdentifier: "taskCell", for: indexPath) as! TaskCell
         let data = viewModel.task(for: indexPath.row)
+        taskCell.setup(title: data?.name)
         
-        return heroCell
+        return taskCell
     }
     
     

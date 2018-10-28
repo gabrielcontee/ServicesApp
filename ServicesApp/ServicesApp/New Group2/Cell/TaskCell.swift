@@ -10,10 +10,16 @@ import UIKit
 
 class TaskCell: UICollectionViewCell {
 
+    @IBOutlet weak var taskTitleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         addShadow()
+    }
+    
+    func setup(title: String?){
+        taskTitleLabel.text = title
     }
     
     func addShadow(){
