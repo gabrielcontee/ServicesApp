@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TasksList: Decodable{
+struct Task: Decodable{
     
     let id: Int
     let name: String?

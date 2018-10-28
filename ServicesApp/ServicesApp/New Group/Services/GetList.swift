@@ -10,7 +10,7 @@ import Foundation
 
 struct GetList: APIRequest {
     
-    typealias Response = TasksList
+    typealias Response = [Task]
     
     // Notice how we create a composed resourceName
     var resourceName: String {
@@ -18,9 +18,9 @@ struct GetList: APIRequest {
     }
     
     // Parameters
-    private let id: Int
+//    private let id: Int
+//
+    init() {
     
-    init(id: Int) {
-        self.id = id
     }
 }
