@@ -37,6 +37,7 @@
 		31A24BBF218578C000AD8196 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BBE218578C000AD8196 /* TextView.swift */; };
 		31A24BC121857A2900AD8196 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BC021857A2900AD8196 /* UIView.swift */; };
 		31A24BC72185862C00AD8196 /* PlaceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BC62185862C00AD8196 /* PlaceDetailsViewModel.swift */; };
+		31A24BC9218589A000AD8196 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A24BC8218589A000AD8196 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		31A24BBE218578C000AD8196 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextView.swift; path = "ServicesApp/New Group2/Xib/TextView.swift"; sourceTree = SOURCE_ROOT; };
 		31A24BC021857A2900AD8196 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = "ServicesApp/New Group2/Xib/UIView.swift"; sourceTree = SOURCE_ROOT; };
 		31A24BC62185862C00AD8196 /* PlaceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewModel.swift; sourceTree = "<group>"; };
+		31A24BC8218589A000AD8196 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				31A24BA5218549B000AD8196 /* UIAlertController.swift */,
+				31A24BC8218589A000AD8196 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				31A24B9F2185336E00AD8196 /* TaskListDataSource.swift in Sources */,
 				31A24B8821851A5D00AD8196 /* ClientAPI.swift in Sources */,
 				31A24BB321855C6900AD8196 /* PlaceDetailViewController.swift in Sources */,
+				31A24BC9218589A000AD8196 /* UIViewController.swift in Sources */,
 				31A24BBB2185773900AD8196 /* PersonCommentView.swift in Sources */,
 				31A24B8A2185291500AD8196 /* APIRequest.swift in Sources */,
 				31A24B8C2185293300AD8196 /* APIResponse.swift in Sources */,

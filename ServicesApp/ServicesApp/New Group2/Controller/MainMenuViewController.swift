@@ -41,6 +41,17 @@ class MainMenuViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showPlaceDetails") {
+            let detailsController: PlaceDetailViewController = segue.destination as! PlaceDetailViewController
+            if let selectedIndexPath = tasksCollectionView.indexPathsForSelectedItems?.first{
+                let data = viewModel.task(for: selectedIndexPath.row)
+                detailsController.placeName = data?.name ?? ""
+            }
+            
+        }
+    }
+    
 }
 
 extension MainMenuViewController: UICollectionViewDataSource{

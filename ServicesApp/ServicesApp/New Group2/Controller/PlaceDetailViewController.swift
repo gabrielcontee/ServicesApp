@@ -24,11 +24,18 @@ class PlaceDetailViewController: UIViewController {
     
     @IBOutlet weak var personCommentView: PersonCommentView!
     
+    private lazy var viewModel = PlaceDetailsViewModel()
     
-    
+    var placeName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let activityIndicator = UIViewController.displaySpinner(onView: self.view)
+        
+        viewModel.fetchPlaceData(placeIdString: placeName) {
+            UIViewController.removeSpinner(spinner: activityIndicator)
+        }
         
         addSearchNavigationItem()
         addNavigationBarTitleLabel()

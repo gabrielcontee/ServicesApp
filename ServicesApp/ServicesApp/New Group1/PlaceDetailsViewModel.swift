@@ -21,14 +21,14 @@ class PlaceDetailsViewModel: NSObject {
     }
     
 
-    func fetchPlaceData(placeIdString: String, completion: @escaping (Error?)->()){
+    func fetchPlaceData(placeIdString: String, completion: @escaping ()->()){
         dataSource.fetchPlaceData(idString: placeIdString) { (error) in
             if error == nil{
 //                print(self.dataSource.placeDict)
-                completion(nil)
+                completion()
             }else{
                 print("Could not load place details")
-                completion(error)
+                completion()
             }
             
         }
