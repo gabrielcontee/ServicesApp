@@ -116,6 +116,9 @@
                                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0A-G5-qaN">
                                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="35.5"/>
                                                                         <state key="normal" image="LIGAR copy"/>
+                                                                        <connections>
+                                                                            <action selector="callNumberAction:" destination="u4R-gG-cm4" eventType="touchUpInside" id="89S-Io-rwV"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ligar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7YE-5T-xxt">
                                                                         <rect key="frame" x="0.0" y="35.5" width="40" height="14.5"/>
@@ -141,6 +144,9 @@
                                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hug-2j-v3W">
                                                                         <rect key="frame" x="0.0" y="0.0" width="39.5" height="35.5"/>
                                                                         <state key="normal" image="SERVICOS"/>
+                                                                        <connections>
+                                                                            <action selector="goToServicesScreen:" destination="u4R-gG-cm4" eventType="touchUpInside" id="6PV-eL-Sv9"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serviços" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ef-Bu-3xC">
                                                                         <rect key="frame" x="0.0" y="35.5" width="39.5" height="14.5"/>
@@ -165,6 +171,9 @@
                                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhh-TG-dgf">
                                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="35.5"/>
                                                                         <state key="normal" image="ENDERECO-POINT"/>
+                                                                        <connections>
+                                                                            <action selector="addressButtonPressed:" destination="u4R-gG-cm4" eventType="touchUpInside" id="fHh-ZW-eQj"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereço" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wss-gc-SzI">
                                                                         <rect key="frame" x="0.0" y="35.5" width="40" height="14.5"/>
@@ -189,6 +198,9 @@
                                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYS-BK-BwK">
                                                                         <rect key="frame" x="0.0" y="0.0" width="39.5" height="35.5"/>
                                                                         <state key="normal" image="COMENTARIOS"/>
+                                                                        <connections>
+                                                                            <action selector="commentariesButtonPressed:" destination="u4R-gG-cm4" eventType="touchUpInside" id="kuX-yD-x6h"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comentários" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WI2-EZ-hmo">
                                                                         <rect key="frame" x="0.0" y="35.5" width="39.5" height="14.5"/>
@@ -361,7 +373,11 @@
                     <navigationItem key="navigationItem" id="46h-ye-oap"/>
                     <size key="freeformSize" width="375" height="1100"/>
                     <connections>
+                        <outlet property="cityNameLabel" destination="hSC-gX-V23" id="lA9-Wa-xgQ"/>
                         <outlet property="descriptionTextView" destination="Y2p-Rr-dOm" id="KiD-Fl-D02"/>
+                        <outlet property="personCommentariesView" destination="DgU-rY-8iD" id="mTf-FS-Mgx"/>
+                        <outlet property="placeImageView" destination="dfa-SW-KDb" id="tDN-Sb-pWK"/>
+                        <outlet property="scrollView" destination="0bI-K7-W4t" id="khx-Kk-fMG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oG-FX-x35" userLabel="First Responder" sceneMemberID="firstResponder"/>

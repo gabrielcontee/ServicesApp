@@ -10,11 +10,20 @@ import UIKit
 
 class PlaceDetailViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var placeImageView: UIImageView!
+    @IBOutlet weak var cityNameLabel: UILabel!
+    
+    
     @IBOutlet weak var descriptionTextView: UITextView!{
         didSet{
             descriptionTextView.adjustUITextViewHeight(arg : descriptionTextView)
         }
     }
+    
+    @IBOutlet weak var personCommentariesView: UIView!
+    
     
     
     override func viewDidLoad() {
@@ -23,6 +32,29 @@ class PlaceDetailViewController: UIViewController {
         addSearchNavigationItem()
         addNavigationBarTitleLabel()
         addStyleToNavigationBar()
+    }
+    
+    @IBAction func callNumberAction(_ sender: UIButton) {
+    }
+    
+    @IBAction func goToServicesScreen(_ sender: UIButton) {
+    
+    }
+    
+    @objc func timerAction() {
+        let yOffSet = personCommentariesView.frame.minY
+        UIView.animate(withDuration: 0.5) {
+            self.scrollView.contentOffset.y = CGFloat(yOffSet)
+        }
+    }
+
+    
+    @IBAction func addressButtonPressed(_ sender: UIButton) {
+        UIAlertController.alertUser("Endereço aqui")
+    }
+    
+    @IBAction func commentariesButtonPressed(_ sender: UIButton) {
+        _ = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
     }
     
     func addStyleToNavigationBar(){
