@@ -29,16 +29,16 @@ class PlaceDetailViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var favoritesImageView: UIImageView!{
+    @IBOutlet weak var favoritesView: UIView!{
         didSet{
-            addressPointView.roundedView()
+            favoritesView.roundedView()
         }
     }
     
     private lazy var viewModel = PlaceDetailsViewModel()
     private lazy var appDelegate = UIApplication.shared.delegate as? AppDelegate
     
-    var placeName: String = "ultimo"
+    var placeName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,8 +89,12 @@ class PlaceDetailViewController: UIViewController {
             self.cityNameLabel.text = self.viewModel.cityName
             self.streetNameLabel.text = self.viewModel.neighborhoodName
             self.descriptionTextView.text = self.viewModel.placeDescription
-            self.placeImageView.downloaded(from: self.viewModel.placePhotoURL)
-            
+            if let url = self.viewModel.placePhotoURL{
+                let activityIndicator = UIViewController.displaySpinner(onView: self.placeImageView)
+                self.placeImageView.downloaded(url: url, completion: {
+                    UIViewController.removeSpinner(spinner: activityIndicator)
+                })
+            }
         }
     }
     

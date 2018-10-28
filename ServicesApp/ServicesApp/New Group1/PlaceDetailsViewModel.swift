@@ -22,13 +22,13 @@ class PlaceDetailsViewModel: NSObject {
     lazy var placeDescription: String = ""
     
     private lazy var placePhotoString = ""
-    var placePhotoURL: URL{
-        return URL(string: placePhotoString)!
+    var placePhotoURL: URL?{
+        return URL(string: placePhotoString)
     }
     
     private lazy var placeLogoString = ""
-    var placeLogoURL: URL{
-        return URL(string: placeLogoString)!
+    var placeLogoURL: URL?{
+        return URL(string: placeLogoString)
     }
     
     func fillDescriptionLabel(with string: String) -> String{

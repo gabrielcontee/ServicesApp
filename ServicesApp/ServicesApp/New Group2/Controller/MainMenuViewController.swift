@@ -46,9 +46,8 @@ class MainMenuViewController: UIViewController {
         if (segue.identifier == "showPlaceDetails") {
             let detailsController: PlaceDetailViewController = segue.destination as! PlaceDetailViewController
             if let selectedIndexPath = tasksCollectionView.indexPathsForSelectedItems?.first{
-                let data = viewModel.task(for: selectedIndexPath.row)
-                
-//                detailsController.placeName = data?.name ?? ""
+                let place = viewModel.task(for: selectedIndexPath.row)
+                detailsController.placeName = place ?? ""
             }
             
         }
@@ -76,7 +75,7 @@ extension MainMenuViewController: UICollectionViewDataSource{
 extension MainMenuViewController: UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showCharacterDetails", sender: self)
+        performSegue(withIdentifier: "showPlaceDetails", sender: self)
     }
 }
 
