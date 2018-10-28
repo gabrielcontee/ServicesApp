@@ -22,13 +22,13 @@ class TaskListViewModel: NSObject{
     
     var fetchDelegate: TaskFetchDelegate?
     var errorDelegate: ErrorAlertDelegate?
-    var tasks: [Task?] = []
+    var tasks: [Task] = []
     
     func numberOfTasks() -> Int{
         return tasks.count
     }
     
-    func tasks(for index: Int) -> Task?{
+    func task(for index: Int) -> Task?{
         guard tasks.isEmpty == false else {
             return nil
         }
