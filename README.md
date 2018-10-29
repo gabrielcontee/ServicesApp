@@ -2,7 +2,7 @@
 
 ***designed by Gabriel Conte***
 
-Code coverage: **76,28%**
+Code coverage: **85,03%**
 
 **Highlights**
 - MVVM 
