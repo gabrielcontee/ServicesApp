@@ -476,7 +476,7 @@
         <!--Commentaries CollectionXIB-->
         <scene sceneID="Zhi-G9-jZI">
             <objects>
-                <collectionViewController id="u1F-4z-nVs" customClass="CommentariesCollectionXIB" customModule="ServicesApp" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="CommentariesCollectionXIB" id="u1F-4z-nVs" customClass="CommentariesCollectionXIB" customModule="ServicesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ktc-Xe-E19">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="490"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -39,6 +39,7 @@ class CommentariesCollectionXIB: UICollectionViewController {
                                    personName: commentForIndex?.nome ?? "",
                                    commentTitle: commentForIndex?.titulo ?? "",
                                    commentDescription: commentForIndex?.comentario ?? "")
+
         return cell
     }
     
