@@ -10,7 +10,11 @@ import UIKit
 
 class CommentaryCell: UICollectionViewCell {
     
-    @IBOutlet weak var personImageView: UIImageView!
+    @IBOutlet weak var personImageView: UIImageView!{
+        didSet{
+            personImageView.roundedView()
+        }
+    }
     @IBOutlet weak var personNameLabel: UILabel!
     @IBOutlet weak var personCommentTitleLabel: UILabel!
     @IBOutlet weak var personCommentDescripTextView: UITextView!

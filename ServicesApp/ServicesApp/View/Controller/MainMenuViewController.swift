@@ -53,6 +53,10 @@ class MainMenuViewController: UIViewController {
         }
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 }
 
 extension MainMenuViewController: UICollectionViewDataSource{

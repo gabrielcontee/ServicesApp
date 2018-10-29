@@ -88,7 +88,7 @@ class PlaceDetailViewController: UIViewController {
     }
     
     @IBAction func commentariesButtonPressed(_ sender: UIButton) {
-        let yOffSet = CGPoint(x: self.view.frame.minX, y: commentariesContainerView.frame.midY)
+        let yOffSet = CGPoint(x: self.view.frame.minX, y: commentariesContainerView.frame.minY)
         self.scrollView.setContentOffset(yOffSet, animated: true)
     }
     
@@ -148,7 +148,8 @@ class PlaceDetailViewController: UIViewController {
     
     func addSearchNavigationItem(){
         let searchImage = UIImage(named: "ICONE PESQUISA")
-        let rightBarButtonItem = UIBarButtonItem(image: searchImage, style: .plain, target: self, action: #selector(PlaceDetailViewController.searchPressed))
+        let scaledIcon = UIImage(cgImage: (searchImage?.cgImage)!, scale: 1.75, orientation: (searchImage?.imageOrientation)!)
+        let rightBarButtonItem = UIBarButtonItem(image: scaledIcon, style: .plain, target: self, action: #selector(PlaceDetailViewController.searchPressed))
         rightBarButtonItem.tintColor = .white
         self.navigationItem.setRightBarButton(rightBarButtonItem, animated: false)
         
