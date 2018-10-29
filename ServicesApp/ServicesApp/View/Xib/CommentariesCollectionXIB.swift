@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let reuseIdentifier = "commentaryCell"
+private let reuseIdentifier = String(describing: CommentaryCell.self)
 
 class CommentariesCollectionXIB: UICollectionViewController {
     
@@ -18,7 +18,8 @@ class CommentariesCollectionXIB: UICollectionViewController {
         super.viewDidLoad()
         
         // Register cell classes
-        self.collectionView!.register(CommentaryCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        let nib = UINib(nibName: reuseIdentifier, bundle: nil)
+        self.collectionView!.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
         
         viewModel.refreshDelegate = self
     }

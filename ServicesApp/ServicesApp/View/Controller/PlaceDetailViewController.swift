@@ -88,7 +88,7 @@ class PlaceDetailViewController: UIViewController {
     }
     
     @IBAction func commentariesButtonPressed(_ sender: UIButton) {
-        let yOffSet = CGPoint(x: self.view.frame.minX, y: commentariesContainerView.frame.midY)
+        let yOffSet = CGPoint(x: self.view.frame.minX, y: commentariesContainerView.frame.minY)
         self.scrollView.setContentOffset(yOffSet, animated: true)
     }
     

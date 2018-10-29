@@ -54,9 +54,9 @@ class ServicesAppUITests: XCTestCase {
         portoAlegrePetrPolisNavigationBar.children(matching: .button).element(boundBy: 1).tap()
         elementsQuery.buttons["COMENTARIOS"].tap()
         element.children(matching: .other).element(boundBy: 5).children(matching: .other).element.children(matching: .collectionView).element.tap()
-        elementsQuery.staticTexts["Ligar"].tap()
-        elementsQuery.buttons["LIGAR copy"].tap()
-        app.alerts["‭(51) 2222-2222‬"].buttons["Cancel"].tap()
+//        elementsQuery.staticTexts["Ligar"].tap()
+//        elementsQuery.buttons["LIGAR copy"].tap()
+//        app.alerts["‭(51) 2222-2222‬"].buttons["Cancel"].tap()
         portoAlegrePetrPolisNavigationBar.buttons["Tasks"].tap()
         
         let element2 = collectionViewsQuery.children(matching: .cell).element(boundBy: 2).children(matching: .other).element.children(matching: .other).element
